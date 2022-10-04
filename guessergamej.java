@@ -142,7 +142,7 @@ class Umpire
 
     
 
-class Main
+class Guessergamej
 
 {
 
