@@ -32,7 +32,7 @@ String email() {
     System.out.print("Enter the email id");
     Scanner scann = new Scanner(System.in);
     b = scann.next();
-    if (b.contains("@")&& (b.endsWith("mail.com"))){
+    if (b.contains("@")&& (b.endsWith("mail.com"))&& b.length()>=12){
         return b;
     }
 
@@ -80,6 +80,6 @@ class Test2 {
     Scanner scnnn = new Scanner(System.in);
     int d= scnnn.nextInt();
 
-    System.out.println(a+ " thanks for purchasing \n visit again "+"\nyour bill has been sent to your email-id "+y);
+    System.out.println(a+ " Thanks for purchasing..... \n    VISIT AGAIN "+"\nYour bill has been sent to your email-id "+y);
 
 }}
