@@ -32,7 +32,7 @@ String email() {
     System.out.print("Enter the email id");
     Scanner scann = new Scanner(System.in);
     b = scann.next();
-    if (b.contains("@")&& (b.endsWith(".com"))){
+    if (b.contains("@")&& (b.endsWith("mail.com"))){
         return b;
     }
 
