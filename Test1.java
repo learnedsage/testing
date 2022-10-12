@@ -13,7 +13,7 @@ class Test1 {
             i = 1;
             System.out.println(a +" is a leap year");}
         int m = 0;
-        if (b > 0 && b <= 31)
+        else if (b > 0 && b <= 31)
             System.out.println(b + " January");
         if ((b > 31 + i) && (b <= 59 + i))
         {
