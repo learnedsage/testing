@@ -47,7 +47,7 @@ class Launch{
 
 }
 
-class Test1{
+class Test2{
 
 
     public static void main(String args[]) {
