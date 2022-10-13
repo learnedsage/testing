@@ -1,10 +1,11 @@
+import java.util.Locale;
 import java.util.Scanner;
 class Launch{
     void Ekart(int c){
-        String[] Mobile ={"Samsung","Apple","One plus","Oppo","Redmi"};
-        String[] laptop= {"Dell","Hp","lenovo","Toshiba","Macbook"};
-        String[] electonic= {"h","Hptf","lenofffhgvo","Toshifgbad","Mafdgcbook"};
-        String[] perfume= {"axe","fogg","nvie","Toshifgbdsad","Mafdgsscbook"};
+        String[] Mobile ={"Samsung","Apple","OnePlus","Oppo","Redmi"};
+        String[] laptop= {"Dell","Hp","Lenovo","Toshiba","Macbook"};
+        String[] electonic= {"Whirlpool","lg","sony"};
+        String[] perfume= {"Axe","Fogg","Denver",};
 
         if(c==1){
             for(int i=0; i< Mobile.length;i++){
@@ -23,13 +24,13 @@ class Launch{
                 System.out.println((i+1)+"."+perfume[i]);
             }}
         else if(c>4)
-            System.out.println("invalid input");
+            System.out.println("Invalid input");
     }
 
     String email() {
         String b;
 
-        System.out.print("Enter the email id");
+        System.out.print("Enter the email id: ");
         Scanner scann = new Scanner(System.in);
         b = scann.next();
        if ((b.contains("@"))&&(b.endsWith(".com"))){
@@ -37,7 +38,7 @@ class Launch{
         }
 
         else{
-            System.out.println("invalid email-id");
+            System.out.println("Invalid email-id");
 
             String  d="**";
             return d;
@@ -47,7 +48,7 @@ class Launch{
 
 }
 
-class Test2{
+class Test1{
 
 
     public static void main(String args[]) {
@@ -81,10 +82,10 @@ class Test2{
 
         }
 
-        System.out.println("Enter your choics using the number: ");
+        System.out.println("Enter your choices using the number: ");
         Scanner scnnn = new Scanner(System.in);
         int d= scnnn.nextInt();
 
-        System.out.println(a+ " thanks for purchasing \n visit again "+"\nyour bill has been sent to your email-id "+y);
+        System.out.println(a.toUpperCase(Locale.ROOT)+ " Thanks for purchasing.... \nVISIT AGIAN "+"\nYour bill has been sent to your email-id: "+y);
 
     }}
